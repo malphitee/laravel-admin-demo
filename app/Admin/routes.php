@@ -12,4 +12,7 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('admin.home');
 
+    $router->resource('posts', 'PostController');
+    $router->resource('categories', 'CategoryController');
+    $router->resource('tags', 'TagController');
 });

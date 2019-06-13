@@ -11,7 +11,7 @@ class Tag extends Model
 
     protected $table = 'tags';
 
-    protected $fillable = ['name','post_id','sort'];
+    protected $fillable = ['name','sort'];
 
     public function posts()
     {

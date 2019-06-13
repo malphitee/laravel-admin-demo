@@ -16,7 +16,6 @@ class CreateTagsTable extends Migration
         Schema::create('tags', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->comment('标签名称');
-            $table->integer('post_id')->comment('关联的文章id');
             $table->decimal('sort',10,5)->comment('排序字段');
             $table->softDeletes();
             $table->timestamps();
